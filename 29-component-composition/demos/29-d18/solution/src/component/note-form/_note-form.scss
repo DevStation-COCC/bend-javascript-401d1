@@ -1,0 +1,18 @@
+@import '../../style/lib/vars.scss';
+
+// input {
+//   width: 100%;
+//   margin: $gutter-sm auto;
+// }
+
+button, input {
+  width: 100%;
+  font-size: 2vw;
+  padding: $gutter-sm;
+  margin: ($gutter-sm / 2) $gutter-sm;
+  transition: 350ms;
+
+  &:hover {
+    background: $secondary;
+  }
+}
