@@ -1,3 +1,8 @@
+/*
+
+In this example the zoo variable will be an object, not a function. But that object just so happens to have multiple functions that we can access.
+
+*/
 const zoo = require('./lib/zoo.js');
 
 console.log(zoo);

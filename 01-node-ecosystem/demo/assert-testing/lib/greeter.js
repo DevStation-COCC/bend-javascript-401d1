@@ -1,3 +1,4 @@
+// A multi-function export
 module.exports = exports = {};
 
 exports.sayHello = (name) => {
