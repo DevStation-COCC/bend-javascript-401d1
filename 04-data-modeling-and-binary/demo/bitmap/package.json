@@ -1,0 +1,15 @@
+{
+  "name": "bitmap",
+  "version": "1.0.0",
+  "description": "A bitmap color transformer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js ./__test__/asset/duck.bmp ./__test__/asset/x-duck.bmp invert",
+    "test": "jest"
+  },
+  "author": "Adam DuQuette <duquetteadam@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
