@@ -33,7 +33,6 @@ bmt.open(inputFile, (err, bitmap) => {
 });
 
 ee.on('fileLoaded', (bitmap) => {
-  console.log(bitmap);
   bmt.transform(bitmap, transform, (err, bitmap) => {
     if(err) throw err;
 
