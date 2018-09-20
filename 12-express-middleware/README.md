@@ -7,6 +7,7 @@
 * Students will be able to implement CORS on an HTTP server
 
 ## Resources
+* Skim [ES6 sub-classing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Sub_classing_with_extends)
 * Skim [morgan docs](https://github.com/expressjs/morgan)
 * Skim [cors docs](https://github.com/expressjs/cors)
 * Skim [dotenv docs](https://github.com/motdotla/dotenv)
