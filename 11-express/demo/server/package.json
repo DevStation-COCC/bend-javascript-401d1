@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam DuQuette <duquetteadam@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-env": "^2.4.1",
+    "babel-register": "^6.26.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.0",
+    "express": "^4.16.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
