@@ -57,6 +57,8 @@ router.route = (req,res) => {
       // If we have one, run the function contained within
       if (handler) {
         return handler(req,res);
+      }else{
+        //send 404 response
       }
     })
     // Otherwise, bug out with an error
