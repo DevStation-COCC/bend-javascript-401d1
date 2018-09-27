@@ -10,7 +10,7 @@ describe('Model Finder Middleware', () => {
     let res = {};
     let next = () => {};
     expect( () => {
-      modelFinder(req,res,next)
+      modelFinder(req,res,next);
     }).toThrow();
   });
   it('returns a model object/function when a valid model is requested', () => {

@@ -16,7 +16,6 @@ router.param('model', modelFinder);
 router.get('/api/v1/:model', (req,res,next) => {
   req.model.find({})
     .then( data => sendJSON(res,data) )
-    // .catch( err => sendError(err, res));
     .catch(next);
 });
 

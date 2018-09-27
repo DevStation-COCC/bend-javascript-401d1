@@ -10,4 +10,6 @@ const animalSchema = mongoose.Schema({
   createdOn: { type:Date, default: Date.now() },
 });
 
-export default mongoose.model('animals', animalSchema);
+var Animal = mongoose.model('animals', animalSchema);
+
+export default Animal;

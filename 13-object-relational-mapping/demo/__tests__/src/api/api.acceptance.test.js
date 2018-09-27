@@ -22,6 +22,13 @@ describe('API', () => {
       .catch(console.err);
   });
 
+  it('gets a 200 response and model with id', () => {
+    return superagent.get('http://localhost:8888/api/v1/bar/42')
+      .then(res => {
+        expect(res.body.id).toBe(42);
+      });
+  });
+
   it('gets a 500 response on an invalid model', () => {
     return superagent.get('http://localhost:8888/api/v1/foobar')
       .then(console.log)

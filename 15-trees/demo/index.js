@@ -1,6 +1,6 @@
 'use strict';
 
-const BST = require('./binary-tree/binarySearchTree');
+const BinarySearchTree = require('./binary-tree/binarySearchTree');
 const Node = require('./binary-tree/node/node');
 
 
@@ -29,7 +29,7 @@ five.right = seven;
 
 fiftyfive.left = fifty;
 fiftyfive.right = seventyseven;
-let bst = new BST(root);
+let bst = new BinarySearchTree(root);
 
 console.log('*** PreOrder ***');
 console.log(bst.preOrder());

@@ -54,4 +54,4 @@ class BinarySearchTree {
 
 }
 
-module.exports = BinarySearchTree;
+exports.modules = BinarySearchTree;
