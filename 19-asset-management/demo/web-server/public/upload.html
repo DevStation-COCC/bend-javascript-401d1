@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload a file</title>
+</head>
+<body>
+
+    <main>
+        <img src="https://s3-us-west-2.amazonaws.com/demo-time-yo/d9a49715f49da1f41f0e7e21dad187ec.18_TechTrainingLogo_black.jpg" alt="" srcset="">
+        <h1>Upload File</h1>
+        <em>Note: This will not work unless you set a Bearer Authorization header with a valid token...</em>
+        <form id="upload" enctype="multipart/form-data">
+            <label>
+                Title
+                <input name="title" />
+            </label>
+            <label>
+                File
+                <input name="uploadFile" type="file" />
+            </label>
+            <button type="submit">Upload File</button>
+        </form>
+    </main>
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        $("#upload").on('submit', function(e){
+            e.preventDefault();
+            let formData = new FormData(this);
+            let token = localStorage.getItem('token');
+
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:3000/upload',
+                data: formData,
+                processData: false,
+                contentType: false,
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                },
+                success: function(response){
+                    console.log(response); // do work...whatever that may be
+                }
+            })
+        });
+
+    </script>
+
+</body>
+</html>
