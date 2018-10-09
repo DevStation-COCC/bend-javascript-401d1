@@ -1,8 +1,7 @@
 'use strict';
 
-const BinarySearchTree = require('./binary-tree/binarySearchTree');
-const Node = require('./binary-tree/node/node');
-
+const BinarySearchTree = require('./binary-tree/binarySearchTree').BinarySearchTree;
+const Node = require('./binary-tree/node/node.js').Node;
 
 /*
         42 
@@ -39,3 +38,18 @@ console.log(bst.inOrder());
 
 console.log('*** PostOrder ***');
 console.log(bst.postOrder());
+
+let bufferOfTree = bst.serialize();
+console.log(bufferOfTree);
+
+let newBst = new BinarySearchTree();
+newBst.deserialize(bufferOfTree);
+
+console.log(bst.preOrder());
+console.log(newBst.preOrder());
+
+let tree = new BinarySearchTree();
+tree.insert(root);
+tree.insert(five);
+
+tree.remove(42);

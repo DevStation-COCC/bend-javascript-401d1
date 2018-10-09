@@ -20,7 +20,10 @@ router.get('/api/v1/:model', (req,res,next) => {
 
 router.get('/api/v1/:model/:id', (req,res,next) => {
   req.model.findOne({_id:req.params.id})
-    .then( data => sendJSON(res,data) )
+    .then( data => {
+      console.log(data);
+      sendJSON(res,data); 
+    })
     .catch( next );
 });
 

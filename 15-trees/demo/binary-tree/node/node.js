@@ -8,4 +8,4 @@ class Node {
   }
 }
 
-exports.modules =  Node;
+exports.Node =  Node;
