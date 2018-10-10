@@ -12,9 +12,9 @@
 * Read [webpack concepts](https://webpack.js.org/concepts/)
 * Skim [webpack configuration](https://webpack.js.org/configuration/)
 * Read [react hello world](https://facebook.github.io/react/docs/hello-world.html) 
-* OPTIONAL [practical tutorial](https://reactjs.org/tutorial/tutorial.html)
 * Read [introducing JSX](https://facebook.github.io/react/docs/introducing-jsx.html)
 * Read [rendering elements](https://facebook.github.io/react/docs/rendering-elements.html)
+* OPTIONAL [practical tutorial](https://reactjs.org/tutorial/tutorial.html)
 
 ## Outline
 
