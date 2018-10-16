@@ -5,13 +5,16 @@ require('dotenv').config();
 const { DefinePlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const production = process.env.NODE_ENV === 'production'; // evals to a Boolean value
+
 const webpackConfig = module.exports = {};
 
-webpackConfig.entry = `${__dirname}/src/main.js`;
+webpackConfig.entry = ['babel-polyfill',`${__dirname}/src/main.js`];
 
 webpackConfig.output = {
   filename: '[name].[hash].js',
   path: `${__dirname}/build`,
+  publicPath: process.env.CDN_URL,
 };
 
 webpackConfig.plugins = [
