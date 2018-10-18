@@ -1,0 +1,8 @@
+* As a user I want to receive a Landing page with a welcome message when I visit.
+* As a user I want to navigate to my Dashboard.
+As a user I want to add notes to my Dashboard.
+As a user I want to view all of my notes on the Dashboard.
+As a user I want to delete a note from my Dashboard.
+
+STRETCH GOAL
+As a user I want to delete ALL notes from my Dashboard.
