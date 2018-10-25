@@ -27,7 +27,7 @@ class DashboardContainer extends React.Component {
         <CategoryForm
           buttonText='create form'
           onComplete={this.props.categoryCreate}/>
-        
+
         {this.props.categories.map(item => {
 
           return <div key={item.id}>

@@ -2,9 +2,10 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import CardForm from '../card-form'
-import Draggable from '../draggable'
 import {renderIf} from '../../lib/util.js'
 import {cardUpdate, cardDelete } from '../../action/card-actions.js'
+
+import Draggable from '../draggable';
 
 class CardItem extends React.Component {
   constructor(props){

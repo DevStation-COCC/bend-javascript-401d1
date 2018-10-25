@@ -49,15 +49,12 @@ const mapDispatchToProps = (dispatch, getState) => {
 }
 
 // connect returns a function that can wrap a component
-let bindToStore = connect( mapStateToProps, mapDispatchToProps) 
-// bindToStore will add default props to a component
-let Dashboard = bindToStore(DashboardContainer)
-export default Dashboard
+// let bindToStore = connect( mapStateToProps, mapDispatchToProps) 
+// // bindToStore will add default props to a component
+// let Dashboard = bindToStore(DashboardContainer)
+// export default Dashboard
 
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(DashboardContainer)
+export default connect(mapStateToProps,mapDispatchToProps)(DashboardContainer)
 
 
 

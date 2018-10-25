@@ -11,6 +11,9 @@ import {
 
 import {
   expenseCreate,
+  expenseUpdate,
+  expenseDelete,
+  expenseReset
 } from '../../action/expense-actions'
 
 import CategoryForm from '../category-form'
@@ -19,8 +22,6 @@ import CategoryItem from '../category-item'
 export class DashboardContainer extends React.Component {
   componentDidMount() {
     console.log('__DASHBOARD__', this)
-    this.props.actions.categoryCreate({ name: 'star wars', budget: 200 })
-    this.props.actions.categoryCreate({ name: 'dune', budget: 300 })
   }
 
   render() {
@@ -32,6 +33,7 @@ export class DashboardContainer extends React.Component {
           buttonText="create form"
           onComplete={this.props.actions.categoryCreate}/>
 
+        <h3>Budgets</h3>
         {utils.renderIf(this.props.categories,
           <div>
             {this.props.categories.map(item => 
@@ -57,6 +59,8 @@ export const mapDispatchToProps = (dispatch, getState) => {
       categoryUpdate: category => dispatch(categoryUpdate(category)),
       categoryDelete: category => dispatch(categoryDelete(category)),
       expenseCreate: expense => dispatch(expenseCreate(expense)),
+      expenseUpdate: expense => dispatch(expenseUpdate(expense)),
+      expenseDelete: expense => dispatch(expenseDelete(expense)),
     },
   }
 }
