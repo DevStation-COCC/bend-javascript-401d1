@@ -1,8 +1,8 @@
-import React from 'react'
-import {Provider} from 'react-redux'
-import {BrowserRouter, Route} from 'react-router-dom'
-import appStoreCreate from '../../lib/app-store-create.js'
-import Dashboard from '../dashboard'
+import React from 'react';
+import {Provider} from 'react-redux';
+import {BrowserRouter, Route} from 'react-router-dom';
+import appStoreCreate from '../../lib/app-store-create.js';
+import Dashboard from '../dashboard';
 
 const store = appStoreCreate()
 

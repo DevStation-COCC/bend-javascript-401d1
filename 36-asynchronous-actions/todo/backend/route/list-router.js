@@ -11,18 +11,18 @@ const List = require('../model/list.js')
 listRouter.post('/api/lists', jsonParser, (req, res, next) => {
   console.log('hit POST /api/lists')
   new List(req.body)
-  .save()
-  .then(list => res.json(list))
-  .catch(next)
+    .save()
+    .then(list => res.json(list))
+    .catch(next)
 })
 
 listRouter.get('/api/lists/:id', (req, res, next) => {
   console.log('hit GET /api/lists/:id')
 
   List.findById(req.params.id)
-  //.populate('tasks')
-  .then(list => res.json(list))
-  .catch(next)
+    // .populate('tasks')
+    .then(list => res.json(list))
+    .catch(next)
 })
 
 

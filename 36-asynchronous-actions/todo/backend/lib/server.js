@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 
 // module logic 
 //    * config and connect to monogo
-mongoose.Promise = Promise
+mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URI)
 
 //    * create app
@@ -30,9 +30,14 @@ app.all('/api/*', (req, res, next) => res.sendStatus(404))
 app.use(require('./error-middleware.js'))
 
 // export start and stop
-const server = module.exports = {}
+const server = module.exports = {};
 server.isOn = false;
 server.start = () => {
+  // In case we are running in testing env
+  // if(!process.env.PORT){
+  //   require('dotenv').config();
+  // }
+
   return new Promise((resolve, reject) => {
     if(!server.isOn){
       server.http = app.listen(process.env.PORT, () => {
@@ -42,7 +47,7 @@ server.start = () => {
       })
       return 
     }
-    reject(new Error('server allread running'))
+    reject(new Error('server already running'))
   })
 }
 

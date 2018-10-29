@@ -20,9 +20,9 @@ const API_URL = process.env.API_URL
 // test logic
 
 describe('testing /api/lists', () => {
-  before(server.start)
-  after(server.stop)
-  afterEach(clearDB)
+  before(server.start);
+  after(server.stop);
+  afterEach(clearDB);
 
   describe('testing POST /api/lists', () => {
     let data = {title: faker.name.title()}
@@ -111,25 +111,3 @@ describe('testing /api/lists', () => {
     })
   })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

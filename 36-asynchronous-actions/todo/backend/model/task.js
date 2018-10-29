@@ -23,17 +23,6 @@ taskSchema.pre('save', function(next) {
     next(new Error('validation failed to create task because list does not exist')))
 })
 
-//taskSchema.post('save', function(doc, next) {
-  //console.log('post save doc', doc)
-  //List.findById(doc.list) 
-  //.then(list => {
-    //list.tasks.push(doc._id)
-    //return list.save()
-  //})
-  //.then(() => next())
-  //.catch(next)
-//})
-
 taskSchema.post('remove', function(doc, next){
   console.log('post remove doc', doc)
   List.findById(doc.list) 
