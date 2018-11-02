@@ -1,6 +1,6 @@
 'use strict';
 
-export default {
+module.exports = {
 
   authenticate: (auth) => {
     if ( (!!auth.username && !!auth.password) ) {

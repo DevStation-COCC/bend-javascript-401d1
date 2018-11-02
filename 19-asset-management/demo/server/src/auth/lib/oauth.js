@@ -1,8 +1,8 @@
 'use strict';
 
-import superagent from 'superagent';
+const superagent = require('superagent');
 
-import User from '../model';
+const User = require('../model');
 
 // This is currently setup for Google, but we could easily swap it out
 // for any other provider or even use a totally different module to

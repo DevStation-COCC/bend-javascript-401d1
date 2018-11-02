@@ -1,7 +1,7 @@
 'use strict';
 
-import fs from 'fs-extra';
-import aws from 'aws-sdk';
+const fs = require('fs-extra');
+const aws = require('aws-sdk');
 
 const s3 = new aws.S3({
   accessKeyId: process.env.AWS_ID,
