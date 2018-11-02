@@ -1,0 +1,20 @@
+.fa-plus-square {
+  color: $create-color;
+}
+
+.fa-trash-alt {
+  color: $danger;
+}
+
+.carousel-container {
+  width: 900px;
+  height: 700px;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .carousel-container {
+    width: auto;
+    height: auto;
+  }
+}
