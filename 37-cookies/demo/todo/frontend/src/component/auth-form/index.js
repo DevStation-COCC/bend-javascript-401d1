@@ -6,9 +6,9 @@ class AuthForm extends React.Component {
     super(props);
 
     this.state = {
-      username: '',
-      email: '',
-      password: ''
+      username: 'alex',
+      email: 'alex@gmail.com',
+      password: 'alex'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -22,8 +22,11 @@ class AuthForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log(this.props);
+    console.log(this.state);
     this.props.onComplete(this.state)
       .then(() => {
+        console.log('handleSubmit');
         this.setState({
           username: '',
           email: '',

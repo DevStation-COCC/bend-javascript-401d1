@@ -18,6 +18,7 @@ export const signupRequest = user => dispatch => {
     .send(user)
     .withCredentials() // cookies
     .then(res => {
+      console.log('save signup token');
       dispatch(tokenSet(res.text));
       localStorage.setItem('token', res.text);
       return res;
