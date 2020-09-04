@@ -34,7 +34,7 @@
     "jest": "^20.0.4",
     "lodash": "^4.17.4",
     "morgan": "^1.8.2",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "raw-loader": "^0.5.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
