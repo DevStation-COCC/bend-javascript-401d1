@@ -41,7 +41,7 @@
     "superagent": "^3.5.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.9",
-    "validator": "^8.0.0",
+    "validator": "^13.7.0",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
   },
