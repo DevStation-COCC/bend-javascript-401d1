@@ -18,7 +18,7 @@
     "cors": "^2.8.3",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
-    "mongoose": "^4.11.0",
+    "mongoose": "^4.13.21",
     "morgan": "^1.8.2",
     "redux-thunk": "^2.3.0"
   },
