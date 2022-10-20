@@ -25,7 +25,7 @@
     "http-errors": "^1.6.2",
     "jsonwebtoken": "^7.4.2",
     "lodash": "^4.17.4",
-    "mongoose": "^4.11.5",
+    "mongoose": "^4.13.21",
     "morgan": "^1.8.2",
     "socket.io": "^2.0.3",
     "superagent": "^3.5.2"
